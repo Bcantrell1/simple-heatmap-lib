@@ -1,4 +1,4 @@
 # simple-heatmap-lib
 
-## Example: 
+## Example
 https://bcantrell1.github.io/simple-heatmap-lib/
