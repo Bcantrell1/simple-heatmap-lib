@@ -63,7 +63,7 @@
     const minHeat = Math.min.apply(this, heatValues);
     const maxHeat = Math.max.apply(this, heatValues);
 
-    const denominator = maxHeat - minHeat;
+    let denominator = maxHeat - minHeat;
 
     if (denominator === 0 || denominator === -Infinity) {
       denominator = 1;
