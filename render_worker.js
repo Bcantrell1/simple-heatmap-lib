@@ -1,10 +1,10 @@
 (() => {
 
   onmessage = (e) => {
-    const data = JSON.parse(e.data);
+    let data = JSON.parse(e.data);
     canvasWidth = data.width;
     canvasHeight = data.height;
-    const heatData = data.smoothing ? initialHeat(smoothGaussian(data.heat)) : initialHeat(data.heat);
+    let heatData = data.smoothing ? initialHeat(smoothGaussian(data.heat)) : initialHeat(data.heat);
     postMessage(JSON.stringify({
       heat: heatData
     }));
