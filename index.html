@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="data:,">
@@ -10,12 +11,10 @@
 </head>
 
 <body>
-  <script src="heatmap.js"></script>
+
   <div class="canvas-container">
     <img id="trackme" src="exampleMobile.jpg" />
-    <canvas 
-      id="heatCanvas"
-      style="position: absolute; 
+    <canvas id="heatCanvas" style="position: absolute; 
       top: 0; 
       left: 0;
       height: 100%;
@@ -23,9 +22,8 @@
       display: none; 
       user-select: none;
       -webkit-user-select: none;
-      -moz-user-select: none;"
-    >
-    This requires canvas support, which
+      -moz-user-select: none;">
+      This requires canvas support, which
       your browser does not have.
     </canvas>
   </div>
@@ -35,7 +33,7 @@
   </div>
 
   <div class="controllers">
-    
+
     <button class="render-button controller" id="do-render">Render Data Points</button>
     <button class="controller" id="collect-data" disabled="disabled">Collect Data Points</button>
     <button class="controller" id="clear-data">Rest Data Points</button>
@@ -46,7 +44,7 @@
 
   </div>
 
-  
+  <script src="heatmap.js"></script>
 </body>
 
 </html>
