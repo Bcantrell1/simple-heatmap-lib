@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="heatmap.js"></script>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="data:,">
@@ -10,12 +10,20 @@
 </head>
 
 <body>
-
+  <script src="heatmap.js"></script>
   <div class="canvas-container">
     <img id="trackme" src="exampleMobile.jpg" />
     <canvas 
-      class="heatmap"
       id="heatCanvas"
+      style="position: absolute; 
+      top: 0; 
+      left: 0;
+      height: 100%;
+      width: auto; 
+      display: none; 
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;"
     >
     This requires canvas support, which
       your browser does not have.

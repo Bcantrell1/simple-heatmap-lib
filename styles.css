@@ -9,18 +9,6 @@ body {
     justify-content: center;
 }
 
-.heatmap {
-    position: absolute; 
-    top: 0; 
-    left: 0;
-    height: 100%;
-    width: auto; 
-    display: none; 
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-}
-
 textarea {
     background: url(https://i.stack.imgur.com/ynxjD.png) repeat-y;
     width: 30%px;
