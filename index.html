@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="heatmap.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>heatmap</title>
+</head>
+
+<body>
+
+  <div class="canvas-container">
+    <img id="trackme" src="exampleMobile.jpg" />
+    <canvas 
+      class="heatmap"
+      id="heatCanvas"
+    >
+    This requires canvas support, which
+      your browser does not have.
+    </canvas>
+  </div>
+
+  <div class="data-points">
+    <textarea id="data-output" cols=20 rows=20>User Input</textarea>
+  </div>
+
+  <div class="controllers">
+    
+    <button class="render-button controller" id="do-render">Render Data Points</button>
+    <button class="controller" id="collect-data" disabled="disabled">Collect Data Points</button>
+    <button class="controller" id="clear-data">Rest Data Points</button>
+
+    <div id="render-time">
+      Processing Time: <span class="time">0</span> seconds
+    </div>
+
+  </div>
+
+  
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+body { 
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(to left, #89C33F, #C5E15D);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heatmap {
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    height: 100%;
+    width: auto; 
+    display: none; 
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+textarea {
+    background: url(http://i.stack.imgur.com/ynxjD.png) repeat-y;
+    width: 30%px;
+    height: 90vh;
+    font: normal 14px verdana;
+    line-height: 25px;
+    padding: 2px 10px;
+    border: none;
+   }
+
+.controllers {
+    display: flex;
+    margin: 5px;
+    flex-direction: column;
+}
+
+.canvas-container {
+    position: relative; 
+    display: inline-block;
+}
+
+.controller:not([disabled]) {
+    margin: 5px;
+    height: 5vh;
+    width: 10vw;
+    position: relative;
+    padding: 10px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+}
+
+.controller:not([disabled]):before {
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    border: 3px solid transparent;
+    border-radius: 20px;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.controller:not([disabled]):after {
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    border: 3px solid transparent;
+    border-radius: 20px;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+}
+
+.controller:disabled,
+.controller[disabled]{
+    margin: 5px;
+    height: 5vh;
+    width: 10vw;
+    position: relative;
+    padding: 10px;
+    background-color: transparent;
+    outline: none;
+    
+    color: white;
+    text-shadow: 2px 2px 8px black;
+  border: none;
+  border-radius: 20px;
+  background-color:#E3E3E3;
+  color: #666666;
+}
+
+.controller:not([disabled]):hover:before {
+    height: 5vh;
+    width: 10vw;
+    border: 3px solid white;
+    border-right: none;
+    border-bottom: none;
+    transition: height 0.5s linear,
+                width 0.3s linear 0.5s;
+}
+
+.controller:not([disabled]):hover:after {
+    height: 5vh;
+    width: 10vw;
+    border: 3px solid white;
+    border-left: none;
+    border-top: none;
+    transition: height 0.5s linear,
+                width 0.3s linear 0.5s;
+}
